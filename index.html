@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPOON — Qoshiq San'ati</title>
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><i class="fa-solid fa-utensils"></i></div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><i class="fa-solid fa-utensils"></i> SPOON</a>
+  <nav class="links" id="links">
+    <a href="#about">Haqida</a>
+    <a href="#history">Tarix</a>
+    <a href="#types">Turlari</a>
+    <a href="#gallery">Galereya</a>
+    <a href="#facts">Faktlar</a>
+    <a href="#contact">Aloqa</a>
+  </nav>
+  <button class="burger" id="burger"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section class="hero" id="home">
+  <img src="hero.jpg" alt="Kumush qoshiq" class="hero-img" id="heroImg">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="tag"><i class="fa-solid fa-star"></i> Oddiy narsa — buyuk tarix</p>
+    <h1>Qoshiq — bu <span class="typed">san'at.</span></h1>
+    <p class="lead">Har bir taomning eng sodiq hamrohi. Ming yillik tarix, cheksiz shakllar va nafis dizayn.</p>
+    <div class="hero-btns">
+      <a href="#types" class="btn btn-gold"><i class="fa-solid fa-utensils"></i> Turlarini ko'rish</a>
+      <a href="#history" class="btn btn-ghost"><i class="fa-solid fa-clock-rotate-left"></i> Tarixi</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<section class="about section" id="about">
+  <div class="about-img reveal left">
+    <img src="wood.jpg" alt="Yog'och qoshiqlar">
+    <div class="badge"><i class="fa-solid fa-tree"></i> Qo'lda yasalgan</div>
+  </div>
+  <div class="about-text reveal right">
+    <p class="kicker">Qoshiq haqida</p>
+    <h2>Tabiatdan tug'ilgan <em>oddiy</em> mo'jiza</h2>
+    <p>Eng birinchi qoshiqlar yog'och, suyak va chig'anoqlardan yasalgan. Bugun ham usta qo'llari yog'ochdan iliq, tabiiy va har biri o'ziga xos qoshiqlar yaratadi.</p>
+    <ul class="checks">
+      <li><i class="fa-solid fa-leaf"></i> Ekologik toza material</li>
+      <li><i class="fa-solid fa-hand-sparkles"></i> Qo'l mehnati</li>
+      <li><i class="fa-solid fa-fire-burner"></i> Issiq taomlar uchun xavfsiz</li>
+    </ul>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <div class="stat"><i class="fa-solid fa-hourglass-half"></i><h3 class="count" data-target="5000">0</h3><p>yillik tarix</p></div>
+  <div class="stat"><i class="fa-solid fa-layer-group"></i><h3 class="count" data-target="120">0</h3><p>xil turi</p></div>
+  <div class="stat"><i class="fa-solid fa-earth-asia"></i><h3 class="count" data-target="195">0</h3><p>davlatda ishlatiladi</p></div>
+  <div class="stat"><i class="fa-solid fa-industry"></i><h3 class="count" data-target="900">0</h3><p>mln dona / yil</p></div>
+</section>
+
+<section class="history section" id="history">
+  <div class="section-head reveal">
+    <p class="kicker">Tarix</p>
+    <h2>Asrlar osha <em>qoshiq</em></h2>
+  </div>
+  <div class="history-wrap">
+    <div class="history-img reveal left"><img src="history.jpg" alt="Antik kumush qoshiqlar"></div>
+    <div class="timeline">
+      <div class="t-item reveal"><span>Mil. avv. 3000</span><h4>Qadimgi Misr</h4><p>Fil suyagi va yog'ochdan bezakli qoshiqlar yasalgan.</p></div>
+      <div class="t-item reveal"><span>I asr</span><h4>Rim imperiyasi</h4><p>Bronza va kumush qoshiqlar zodagonlar ramziga aylandi.</p></div>
+      <div class="t-item reveal"><span>XVIII asr</span><h4>Angliya</h4><p>Gerbli kumush qoshiqlar oilaviy meros sifatida saqlangan.</p></div>
+      <div class="t-item reveal"><span>XX asr</span><h4>Zanglamas po'lat</h4><p>Qoshiq har bir xonadonga arzon va mustahkam bo'lib kirdi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="types section" id="types">
+  <div class="section-head reveal">
+    <p class="kicker">Turlari</p>
+    <h2>Har bir vazifa uchun <em>o'z</em> qoshig'i</h2>
+  </div>
+  <div class="filters" id="filters">
+    <button class="active" data-filter="all">Hammasi</button>
+    <button data-filter="metal">Metall</button>
+    <button data-filter="wood">Yog'och</button>
+    <button data-filter="luxury">Hashamatli</button>
+  </div>
+  <div class="cards" id="cards">
+    <div class="card" data-cat="metal"><div class="card-img"><img src="hero.jpg" alt="Osh qoshiq"></div><div class="card-body"><i class="fa-solid fa-bowl-food"></i><h3>Osh qoshig'i</h3><p>Sho'rva va suyuq taomlar uchun klassik kumush qoshiq.</p><button class="like"><i class="fa-regular fa-heart"></i> <b>0</b></button></div></div>
+    <div class="card" data-cat="wood"><div class="card-img"><img src="wood.jpg" alt="Yog'och qoshiq"></div><div class="card-body"><i class="fa-solid fa-tree"></i><h3>Yog'och qoshiq</h3><p>Qozon va idishlarni tirnamaydi, oshxonaning eng yaxshi do'sti.</p><button class="like"><i class="fa-regular fa-heart"></i> <b>0</b></button></div></div>
+    <div class="card" data-cat="luxury"><div class="card-img"><img src="gold.jpg" alt="Oltin qoshiq"></div><div class="card-body"><i class="fa-solid fa-crown"></i><h3>Oltin qoshiq</h3><p>Asal va shirinliklar uchun nafis, yaltiroq tanlov.</p><button class="like"><i class="fa-regular fa-heart"></i> <b>0</b></button></div></div>
+    <div class="card" data-cat="luxury"><div class="card-img"><img src="history.jpg" alt="Antik qoshiq"></div><div class="card-body"><i class="fa-solid fa-landmark"></i><h3>Antik qoshiq</h3><p>Gerbli, o'yma naqshli kolleksiya qoshiqlari.</p><button class="like"><i class="fa-regular fa-heart"></i> <b>0</b></button></div></div>
+  </div>
+</section>
+
+<section class="quote-sec">
+  <img src="gold.jpg" alt="Asal va oltin qoshiq" class="quote-bg">
+  <div class="quote-box">
+    <i class="fa-solid fa-quote-left"></i>
+    <p id="quote">Shirin hayot bir qoshiq asaldan boshlanadi.</p>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <div class="section-head reveal">
+    <p class="kicker">Galereya</p>
+    <h2>Rasmlarga <em>yaqindan</em> qarang</h2>
+  </div>
+  <div class="grid">
+    <img src="hero.jpg" alt="Kumush qoshiq qora toshda" class="g-item big">
+    <img src="gold.jpg" alt="Oltin qoshiqdan asal oqmoqda" class="g-item">
+    <img src="wood.jpg" alt="Yog'och qoshiqlar to'plami" class="g-item">
+    <img src="history.jpg" alt="Muzeydagi antik qoshiqlar" class="g-item wide">
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lbImg" src="" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<section class="facts section" id="facts">
+  <div class="section-head reveal">
+    <p class="kicker">Qiziqarli faktlar</p>
+    <h2>Bilasizmi?</h2>
+  </div>
+  <div class="fact-box reveal">
+    <i class="fa-solid fa-lightbulb"></i>
+    <p id="factText">"Spoon" so'zi qadimgi ingliz tilida "yog'och bo'lagi" degan ma'noni bildiradi.</p>
+    <button class="btn btn-gold" id="factBtn"><i class="fa-solid fa-shuffle"></i> Yangi fakt</button>
+  </div>
+  <div class="faq">
+    <div class="faq-item"><button class="faq-q">Yog'och qoshiqni qanday parvarish qilish kerak? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Qo'lda yuving, darhol quriting va oyda bir marta o'simlik moyi surting.</p></div></div>
+    <div class="faq-item"><button class="faq-q">Kumush qoshiq nega qorayadi? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Havodagi oltingugurt bilan reaksiyaga kirishadi. Soda va issiq suv bilan tozalanadi.</p></div></div>
+    <div class="faq-item"><button class="faq-q">Eng katta qoshiq qancha? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Dunyodagi eng katta yog'och qoshiq uzunligi 9 metrdan oshadi.</p></div></div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="section-head reveal">
+    <p class="kicker">Aloqa</p>
+    <h2>Biz bilan <em>bog'laning</em></h2>
+  </div>
+  <form class="form reveal" id="form">
+    <div class="field"><i class="fa-solid fa-user"></i><input type="text" id="name" placeholder="Ismingiz" required></div>
+    <div class="field"><i class="fa-solid fa-envelope"></i><input type="email" id="email" placeholder="Email" required></div>
+    <div class="field"><i class="fa-solid fa-message"></i><textarea id="msg" placeholder="Xabaringiz" rows="4" required></textarea></div>
+    <button class="btn btn-gold" type="submit"><i class="fa-solid fa-paper-plane"></i> Yuborish</button>
+    <p class="form-msg" id="formMsg"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <a href="#home" class="logo"><i class="fa-solid fa-utensils"></i> SPOON</a>
+  <div class="socials">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+  <p>© <span id="year"></span> SPOON. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<button class="to-top" id="toTop"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
